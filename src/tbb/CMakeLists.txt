@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-add_library(tbb SHARED
+add_library(tbb
     allocator.cpp
     arena.cpp
     arena_slot.cpp

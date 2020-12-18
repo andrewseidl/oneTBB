@@ -99,6 +99,8 @@ option(TBB4PY_BUILD "Enable tbb4py build" OFF)
 option(TBB_CPF "Enable preview features of the library" OFF)
 option(TBB_FIND_PACKAGE "Enable search for external oneTBB using find_package instead of build from sources" OFF)
 
+option(BUILD_SHARED_LIBS "Build shared libraries" ON)
+
 if (NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
     set(CMAKE_BUILD_TYPE RelWithDebInfo CACHE STRING "Build type" FORCE)
     message(STATUS "CMAKE_BUILD_TYPE is not specified. Using default: ${CMAKE_BUILD_TYPE}")

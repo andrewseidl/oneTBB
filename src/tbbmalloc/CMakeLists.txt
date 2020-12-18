@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-add_library(tbbmalloc SHARED
+add_library(tbbmalloc
     backend.cpp
     backref.cpp
     frontend.cpp

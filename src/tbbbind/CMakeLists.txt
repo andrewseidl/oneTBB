@@ -17,7 +17,7 @@ macro(tbbbind_build TBBBIND_NAME HWLOC_VERSION)
     if (NOT HWLOC_FOUND)
         message(STATUS "HWLOC ${HWLOC_VERSION} was not found, the corresponding TBBBind library target was disabled.")
     else()
-        add_library(${TBBBIND_NAME} SHARED tbb_bind.cpp)
+        add_library(${TBBBIND_NAME} tbb_bind.cpp)
         add_library(TBB::${TBBBIND_NAME} ALIAS ${TBBBIND_NAME})
 
         target_compile_definitions(${TBBBIND_NAME} PRIVATE __TBBBIND_BUILD)
